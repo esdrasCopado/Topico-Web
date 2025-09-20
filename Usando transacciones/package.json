@@ -1,0 +1,16 @@
+{
+  "name": "usando-transacciones",
+  "version": "1.0.0",
+  "description": "ejercicio de transacciones con mysql",
+  "license": "ISC",
+  "author": "esdras copado",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "mysql2": "^3.15.0"
+  }
+}
