@@ -1,0 +1,19 @@
+
+services:
+
+  db:
+    image: postgres:latest
+    container_name: postgres_db
+    restart: always
+
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=bibiliotecaDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
