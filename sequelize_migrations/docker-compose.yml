@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mysql
+    restart: always
+    
+    environment: 
+      MYSQL_ROOT_PASSWORD: password_root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password_user
+      MYSQL_DATABASE: practica
+    ports:
+      - "3306:3306"
+    volumes: 
+      - db:/var/lib/mysql
+
+volumes: 
+  db:
