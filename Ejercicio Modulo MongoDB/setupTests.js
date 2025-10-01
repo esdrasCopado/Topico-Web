@@ -1,0 +1,1 @@
+// Este archivo está vacío porque cada test maneja su propia conexión a la base de datos
