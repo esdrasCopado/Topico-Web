@@ -8,7 +8,7 @@ describe('User Model Test', () => {
     beforeAll(async () => {
         database = new Database();
         await database.connect();
-        userDAO = new UserDAO();
+        userDAO = new UserDAO(database);
     });
 
     afterAll(async () => {

@@ -1,9 +1,8 @@
 import { ObjectId } from "mongodb";
-import db from "../config/db.js";
 
 export default class UserDAO {
-    constructor() {
-        this.db = new db();
+    constructor(database) {
+        this.db = database;
         this.collection = this.db.obtenerColeccion("users");
     }
 
