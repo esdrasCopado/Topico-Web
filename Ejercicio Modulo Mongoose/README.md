@@ -2,7 +2,7 @@
 
 Sistema de gestión de ventas e inventario desarrollado con Node.js, MongoDB y Mongoose. Implementa el patrón DAO (Data Access Object) para manejar operaciones CRUD completas sobre productos y ventas, con control automático de inventario.
 
-## Diagrama de Modelos
+## Diagrama de Modelo
 
 ![Diagrama de Modelos](diagrama.png)
 
@@ -14,5 +14,5 @@ El sistema relaciona ventas con productos mediante referencias de ObjectId, perm
 3. Configura la conexión a MongoDB en `config.js`.
 4. Ejecuta los ejemplos con `node ejemplos-uso.js`.
 
-### Se recomienda usar el archivo docker-compose.yml para levantar un contenedor de mongo y mongo-express para gestionar la base de datos.
+### Se recomienda usar el archivo docker-compose.yml para levantar un contenedor de mongo 
 ```docker-compose up -d --build```
