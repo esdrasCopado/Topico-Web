@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas y Modelos de Autos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        select:disabled {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selector de Marcas y Modelos</h1>
+
+        <div class="form-group">
+            <label for="selectMarca">Seleccione una Marca:</label>
+            <select id="selectMarca">
+                <option value="">-- Seleccione una marca --</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="selectModelo">Seleccione un Modelo:</label>
+            <select id="selectModelo" disabled>
+                <option value="">-- Primero seleccione una marca --</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
