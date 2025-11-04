@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component - Tarjeta de Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Componente de Tarjeta de Perfil</h1>
+
+        <!-- Ejemplo de uso del componente -->
+        <profile-card
+            username="Ana García"
+            avatar="https://i.pravatar.cc/150?img=1"
+            bio="Desarrolladora Frontend apasionada por Web Components">
+        </profile-card>
+
+        <profile-card
+            username="Carlos Ruiz"
+            avatar="https://i.pravatar.cc/150?img=12"
+            bio="Diseñador UX/UI con experiencia en diseño de interfaces">
+        </profile-card>
+
+        <profile-card
+            username="María López"
+            avatar="https://i.pravatar.cc/150?img=5"
+            bio="Ingeniera de Software especializada en JavaScript">
+        </profile-card>
+    </div>
+
+    <!-- Importar el componente -->
+    <script src="profile-card.js"></script>
+</body>
+</html>
